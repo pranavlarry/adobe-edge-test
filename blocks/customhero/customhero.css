@@ -1,6 +1,7 @@
 .customhero-container {
     padding: 0!important;
-    height: 1036px;
+    height: 700px;
+    overflow: hidden;
 }
 
 .customhero-container p {
@@ -18,7 +19,7 @@
 .hero-box {
     position: absolute;
     top: 48px;
-    left: 20px;
+    left: 15%;
     background-color: #fff;
     border-radius: 24px;
     min-width: 750px;
@@ -30,6 +31,7 @@
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
     width: 100%;
+    font-weight: bold;
 }
 
 .hero-box-title p {
@@ -74,6 +76,7 @@
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    padding: 30px;
 }
 
 .hero-box-card {
