@@ -21,21 +21,53 @@ export default function decorate(block) {
     const card3Img = card3Block.querySelector('picture');
     const card3Text = card3Block.querySelector('div:last-child');
 
-    console.log(heroImge, boxTitle, boxContentTop, boxContentMiddle, boxContentBottom, card1Img, card1Text, card2Img, card2Text, card3Img, card3Text);
-    // console.log(block.children);
-    // block.classList.add(`columns-${cols.length}-cols`);
-  
-    // // setup image columns
-    // [...block.children].forEach((row) => {
-    //   [...row.children].forEach((col) => {
-    //     const pic = col.querySelector('picture');
-    //     if (pic) {
-    //       const picWrapper = pic.closest('div');
-    //       if (picWrapper && picWrapper.children.length === 1) {
-    //         // picture is only content in column
-    //         picWrapper.classList.add('columns-img-col');
-    //       }
-    //     }
-    //   });
-    // });
+    const container = document.createElement('div');
+    container.classList.add('hero-container');
+    heroImge.classList.add("hero-image");
+    container.appendChild(heroImge);
+
+    const heroBox = document.createElement('div');
+    heroBox.classList.add('hero-box');
+
+    boxTitle.classList.add('hero-box-title');
+    heroBox.appendChild(boxTitle);
+    boxContentTop.classList.add('hero-box-top');
+    heroBox.appendChild(boxContentTop);
+    boxContentMiddle.classList.add('hero-box-middle');
+    heroBox.appendChild(boxContentMiddle);
+    boxContentBottom.classList.add('hero-box-bottom');
+    heroBox.appendChild(boxContentBottom);
+
+    const cards = document.createElement('div');
+    cards.classList.add('hero-box-cards');
+
+    const card1 = document.createElement('div');
+    card1.classList.add('hero-box-card');
+    card1Img.classList.add('hero-box-card-image');
+    card1.appendChild(card1Img);
+    card1Text.classList.add('hero-box-card-text');
+    card1.appendChild(card1Text);
+    cards.appendChild(card1);
+
+    const card2 = document.createElement('div');
+    card2.classList.add('hero-box-card');
+    card2Img.classList.add('hero-box-card-image');
+    card2.appendChild(card2Img);
+    card2Text.classList.add('hero-box-card-text');
+    card2.appendChild(card2Text);
+    cards.appendChild(card2);
+
+    const card3 = document.createElement('div');
+    card3.classList.add('hero-box-card');
+    card3Img.classList.add('hero-box-card-image');
+    card3.appendChild(card3Img);
+    card3Text.classList.add('hero-box-card-text');
+    card3.appendChild(card3Text);
+    cards.appendChild(card3);
+
+    heroBox.appendChild(cards);
+    container.appendChild(heroBox);
+
+    block.textContent = '';
+    block.append(container);
   }
