@@ -1,0 +1,29 @@
+.customhero-container {
+    padding: 0;
+    height: 1036px;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-box {
+    position: absolute;
+    top: 48px;
+    left: 20px;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.hero-box-title {
+    background: linear-gradient(to right, #14847f, #1c8a77 15.3%, #59b83b 82.8%, #63bf32);
+    padding: 12px 0;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    width: 100%;
+}
+
+.hero-box-title p {
+    font-size: 24px;
+    color: #fff;
+}

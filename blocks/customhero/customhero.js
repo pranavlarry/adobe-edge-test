@@ -31,12 +31,15 @@ export default function decorate(block) {
 
     boxTitle.classList.add('hero-box-title');
     heroBox.appendChild(boxTitle);
+    const boxContent = document.createElement('div');
+    boxContent.classList.add('hero-box-content');
     boxContentTop.classList.add('hero-box-top');
-    heroBox.appendChild(boxContentTop);
+    boxContent.appendChild(boxContentTop);
     boxContentMiddle.classList.add('hero-box-middle');
-    heroBox.appendChild(boxContentMiddle);
+    boxContent.appendChild(boxContentMiddle);
     boxContentBottom.classList.add('hero-box-bottom');
-    heroBox.appendChild(boxContentBottom);
+    boxContent.appendChild(boxContentBottom);
+    heroBox.appendChild(boxContent);
 
     const cards = document.createElement('div');
     cards.classList.add('hero-box-cards');
