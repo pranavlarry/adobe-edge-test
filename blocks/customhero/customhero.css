@@ -44,7 +44,7 @@
 }
 
 .hero-box-top {
-    margin-left: -30%;
+    margin-left: -15%;
     width: fit-content;
 }
 
@@ -58,9 +58,32 @@
     font-size: 36px;
     color: #14847f;
     margin: 0;
+    font-weight: bold;
 }
 
 .hero-box-bottom {
-    margin-right: -30%;
-    width: fit-content;
+    margin-right: -15%;
+    text-align: right;
+}
+
+.hero-box-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.hero-box-card {
+    display: flex;
+}
+
+.hero-box-card-image {
+    width: 44px;
+    height: 44px;
+}
+
+.hero-box-card-text p {
+    margin: 0;
+    font-weight: bold;
+    color: #14847f;
+    font-size: 24px;
 }
