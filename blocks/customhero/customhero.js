@@ -1,6 +1,9 @@
 export default function decorate(block) {
     const cols = [...block.firstElementChild.children];
     console.log(cols);
+    // block.textContent = '';
+    const heroImg = block.children;
+    console.log(block.children);
     // block.classList.add(`columns-${cols.length}-cols`);
   
     // // setup image columns
